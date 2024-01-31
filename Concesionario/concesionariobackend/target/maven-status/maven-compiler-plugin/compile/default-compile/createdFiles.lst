@@ -1,0 +1,13 @@
+com\concesionario\concesionariobackend\service\TractorService.class
+com\concesionario\concesionariobackend\service\ModeloService.class
+com\concesionario\concesionariobackend\ConcesionariobackendApplication.class
+com\concesionario\concesionariobackend\controller\TractorController.class
+com\concesionario\concesionariobackend\controller\MarcaController.class
+com\concesionario\concesionariobackend\model\Marca.class
+com\concesionario\concesionariobackend\controller\ModeloController.class
+com\concesionario\concesionariobackend\model\Tractor.class
+com\concesionario\concesionariobackend\repository\ModeloRepository.class
+com\concesionario\concesionariobackend\service\MarcaService.class
+com\concesionario\concesionariobackend\model\Modelo.class
+com\concesionario\concesionariobackend\repository\MarcaRepository.class
+com\concesionario\concesionariobackend\repository\TractorRepository.class

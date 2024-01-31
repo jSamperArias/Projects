@@ -1,0 +1,35 @@
+* {
+  font-family: "Kumbh Sans", sans-serif !important;
+}
+
+.dialog-title {
+  background-color: #cdb199;
+  border-bottom: 1px solid gray;
+  padding: 2em 2em 1em 2em;
+}
+
+.dialog-form {
+  padding-top: 20px;
+  background-color: white;
+}
+
+.fila {
+  display: flex;
+  gap: 10px;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+.dialog-actions {
+  background-color: #cdb199;
+  display: flex;
+  justify-content: end;
+  border-top: 1px solid gray;
+  padding: 0.8em;
+}
+
+.dialog-actions button {
+  flex: 1;
+}

@@ -1,0 +1,23 @@
+<form (ngSubmit)="eliminarModelo()">
+  <mat-card>
+    <mat-card-content>
+      <p>
+        Id: <span>{{ modelo.id_modelo }}</span>
+      </p>
+      <p>
+        Nombre modelo: <span>{{ modelo.nombre_modelo }}</span>
+      </p>
+      <p>
+        Uso modelo: <span>{{ modelo.uso_modelo }}</span>
+      </p>
+      <p>
+        Marca: <span>{{ modelo.marca.nombre_marca }}</span>
+      </p>
+    </mat-card-content>
+  </mat-card>
+
+  <div class="dialog-actions" mat-dialog-actions>
+    <button mat-raised-button type="submit">Eliminar</button>
+    <button mat-raised-button [mat-dialog-close]="true" color="warn">Cancelar</button>
+  </div>
+</form>

@@ -1,0 +1,31 @@
+<form (ngSubmit)="eliminarTractor()">
+  <mat-card>
+    <mat-card-content>
+      <p>
+        Id: <span>{{ tractor.id_tractor }}</span>
+      </p>
+      <p>
+        Nombre tractor: <span>{{ tractor.nombre_tractor }}</span>
+      </p>
+      <p>
+        Potencia tractor: <span>{{ tractor.potencia_tractor }}</span>
+      </p>
+      <p>
+        Dimensiones: <span>{{ tractor.dimensiones_tractor }}</span>
+      </p>
+      <p>
+        Modelo: <span>{{ tractor.modelo.nombre_modelo }}</span>
+      </p>
+      <p>
+        Marca: <span>{{ tractor.modelo.marca.nombre_marca }}</span>
+      </p>
+    </mat-card-content>
+  </mat-card>
+
+  <div class="dialog-actions" mat-dialog-actions>
+    <button mat-raised-button type="submit">Eliminar</button>
+    <button mat-raised-button [mat-dialog-close]="true" color="warn">
+      Cancelar
+    </button>
+  </div>
+</form>

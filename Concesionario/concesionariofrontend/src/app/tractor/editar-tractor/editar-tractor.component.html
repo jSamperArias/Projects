@@ -1,0 +1,51 @@
+<form [formGroup]="tractorForm" (ngSubmit)="editarTractor()">
+  <div class="dialog-title">
+    <h2>Editar tractor</h2>
+  </div>
+
+  <div class="dialog-form" mat-dialog-content>
+    <div class="fila">
+      <mat-form-field appearance="outline">
+        <mat-label>Nombre Tractor</mat-label>
+        <input formControlName="nombre_tractor" matInput type="text" />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Potencia Tractor</mat-label>
+        <input formControlName="potencia_tractor" matInput type="number" />
+        <mat-hint>En CV*</mat-hint>
+      </mat-form-field>
+    </div>
+
+    <div class="fila">
+      <mat-form-field>
+        <mat-label>Modelo</mat-label>
+        <mat-select formControlName="modelo">
+          <mat-option *ngFor="let modelo of modelos" [value]="modelo.nombre_modelo">
+            {{ modelo.nombre_modelo }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+
+    <div class="fila">
+      <mat-form-field appearance="outline">
+        <mat-label>Ancho</mat-label>
+        <input formControlName="ancho_tractor" matInput type="number" />
+        <mat-hint>En CM*</mat-hint>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Alto</mat-label>
+        <input formControlName="alto_tractor" matInput type="number" />
+        <mat-hint>En CM*</mat-hint>
+      </mat-form-field>
+    </div>
+  </div>
+
+  <div class="dialog-actions" mat-dialog-actions>
+    <button mat-raised-button type="submit">Editar</button>
+    <button mat-raised-button [mat-dialog-close]="true" color="warn">
+      Cancelar
+    </button>
+  </div>
+</form>
