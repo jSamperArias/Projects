@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#979797</color>
+    <color name="colorPrimaryDay">#CFCFCF</color>
+    <color name="colorPrimaryNight">#555555</color>
+    <color name="holo_green_light">#DB66C507</color>
+    <color name="holo_red_light">#DBF83A3A</color>
+    <color name="deep_blue">#DB1B3770</color>
+</resources>
